@@ -31,7 +31,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-school-gold/20 rounded-full text-school-gold mb-8 animate-fade-in-up">
             <span className="w-2 h-2 bg-school-gold rounded-full animate-pulse" />
-            <span className="text-sm font-medium">Admissions Open 2024-25</span>
+            <span className="text-sm font-medium">Admissions Open 2025-26</span>
           </div>
 
           {/* Main Heading */}
@@ -63,12 +63,11 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 animate-fade-in-up animation-delay-400">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-16 animate-fade-in-up animation-delay-400">
             {[
-              { value: "25+", label: "Years of Excellence" },
-              { value: "2000+", label: "Students Enrolled" },
+              { value: "3000+", label: "Students Enrolled" },
               { value: "100+", label: "Expert Teachers" },
-              { value: "98%", label: "Success Rate" },
+              { value: "2008", label: "Established" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-3xl md:text-4xl font-heading font-bold text-school-gold mb-1">

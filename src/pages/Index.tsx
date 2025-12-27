@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Crescent School - Excellence in Education | Admissions Open 2024-25</title>
+        <title>Crescent School - Excellence in Education | Admissions Open 2025-26</title>
         <meta
           name="description"
           content="Crescent School offers quality education from Nursery to Class 10, blending modern academics with traditional values. Maharashtra State Board affiliated. Apply now!"

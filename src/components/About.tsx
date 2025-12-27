@@ -68,7 +68,7 @@ const About = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
-              Nurturing Future Leaders Since 1998
+              Nurturing Future Leaders Since 2008
             </h3>
             <p className="text-muted-foreground">
               Crescent School was established with the noble aim of providing quality education that combines modern academic excellence with traditional Islamic values. Our school is affiliated with the Maharashtra State Board and offers education from Nursery to Class 10.
