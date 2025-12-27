@@ -71,7 +71,7 @@ const About = () => {
               Nurturing Future Leaders Since 2008
             </h3>
             <p className="text-muted-foreground">
-              Crescent School was established with the noble aim of providing quality education that combines modern academic excellence with traditional Islamic values. Our school is affiliated with the Maharashtra State Board and offers education from Nursery to Class 10.
+              Crescent School follows the Gujarat Secondary and Higher Secondary Education Board (GSEB) curriculum, ensuring strong academic foundations aligned with state education standards. The school emphasizes conceptual learning, discipline, and overall student development, preparing learners for academic excellence and future opportunities through a balanced and structured approach.
             </p>
             <p className="text-muted-foreground">
               We believe in the holistic development of each child, focusing not just on academics but also on character building, moral values, and life skills that prepare them for the challenges of tomorrow.

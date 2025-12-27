@@ -1,4 +1,4 @@
-import { Monitor, Beaker, BookOpen, Bus, Shield, Utensils, Wifi, Trophy } from "lucide-react";
+import { Monitor, Beaker, BookOpen, Shield, Wifi, Trophy } from "lucide-react";
 
 const Facilities = () => {
   const facilities = [
@@ -28,19 +28,9 @@ const Facilities = () => {
       description: "Playground with facilities for cricket, football, and indoor games",
     },
     {
-      icon: Bus,
-      title: "Transport",
-      description: "Safe and reliable bus service covering all major areas",
-    },
-    {
       icon: Shield,
       title: "CCTV Surveillance",
       description: "24/7 CCTV monitoring for complete campus security",
-    },
-    {
-      icon: Utensils,
-      title: "Cafeteria",
-      description: "Hygienic cafeteria serving nutritious and halal food",
     },
   ];
 

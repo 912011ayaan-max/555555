@@ -40,8 +40,8 @@ const Programs = () => {
     {
       icon: GraduationCap,
       title: "Board Affiliation",
-      grades: "Maharashtra State Board",
-      description: "Affiliated with Maharashtra State Board of Secondary & Higher Secondary Education with excellent pass percentages.",
+      grades: "Gujarat (GSEB)",
+      description: "Affiliated with Gujarat Secondary and Higher Secondary Education Board (GSEB).",
       color: "bg-primary/10 text-primary",
     },
   ];
