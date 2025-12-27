@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+const logoSrc = new URL("../../CS_Logo[1].png", import.meta.url).href;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-3">
-              <img src={logo} alt="Crescent School" className="h-14 w-auto" />
+              <img src={logoSrc} alt="Crescent School" className="h-14 w-auto bg-primary-foreground/10 rounded-lg p-1" />
               <div className="hidden sm:block">
                 <h1 className="font-heading text-xl font-bold text-primary">Crescent School</h1>
                 <p className="text-xs text-muted-foreground">Excellence • Character • Faith</p>

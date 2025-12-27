@@ -6,7 +6,6 @@ import Programs from "@/components/Programs";
 import Facilities from "@/components/Facilities";
 import Notices from "@/components/Notices";
 import Gallery from "@/components/Gallery";
-import Fees from "@/components/Fees";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -32,7 +31,6 @@ const Index = () => {
           <Notices />
           <Facilities />
           <Gallery />
-          <Fees />
           <Contact />
         </main>
         <Footer />

@@ -82,58 +82,63 @@ const Programs = () => {
           ))}
         </div>
 
-        {/* Shifts Information */}
         <div className="mt-16 grid md:grid-cols-2 gap-8">
-          <div className="bg-primary rounded-2xl p-8 text-primary-foreground">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-school-gold/20 rounded-full flex items-center justify-center">
-                <span className="text-2xl">🌅</span>
-              </div>
-              <div>
-                <h3 className="font-heading text-2xl font-bold">Morning Shift</h3>
-                <p className="text-primary-foreground/70 text-sm">Pre-School, Grades 9–12 (Gm), XI–XII Science, Commerce</p>
-              </div>
-            </div>
-            <div className="space-y-3">
-              <div className="flex justify-between py-2 border-b border-primary-foreground/20">
-                <span className="text-primary-foreground/80">Timing</span>
-                <span className="font-semibold">Pre-School 08:15–11:15; 9–12(Gm)/Commerce 07:30–12:20; XI–XII Sci 07:20–2:00</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-primary-foreground/20">
-                <span className="text-primary-foreground/80">Classes</span>
-                <span className="font-semibold">Pre-School, Grades 9–12 (Gm), XI–XII Science, Commerce</span>
-              </div>
-              <div className="flex justify-between py-2">
-                <span className="text-primary-foreground/80">Assembly</span>
-                <span className="font-semibold">Friday (Jummah) half day</span>
-              </div>
-            </div>
+          <div className="bg-card rounded-2xl p-6 border border-border">
+            <h3 className="font-heading text-2xl font-bold text-foreground mb-4">Morning Shift</h3>
+            <table className="w-full border border-border rounded-lg overflow-hidden">
+              <thead className="bg-muted">
+                <tr>
+                  <th className="text-left p-3 text-sm text-muted-foreground">Section</th>
+                  <th className="text-left p-3 text-sm text-muted-foreground">Timings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t border-border">
+                  <td className="p-3">Pre-School</td>
+                  <td className="p-3">08:15 – 11:15</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="p-3">Grade 9–12 (Gm)</td>
+                  <td className="p-3">07:30 – 12:20</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="p-3">Grades 1–12 (Commerce)</td>
+                  <td className="p-3">07:30 – 12:20</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="p-3">XI–XII Science</td>
+                  <td className="p-3">07:20 – 2:00</td>
+                </tr>
+              </tbody>
+            </table>
+            <p className="mt-3 text-sm text-muted-foreground">Friday (Jummah) half day</p>
           </div>
 
-          <div className="bg-school-gold rounded-2xl p-8 text-school-green-dark">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-school-green-dark/20 rounded-full flex items-center justify-center">
-                <span className="text-2xl">🌤️</span>
-              </div>
-              <div>
-                <h3 className="font-heading text-2xl font-bold">Noon Shift</h3>
-                <p className="text-school-green-dark/70 text-sm">Pre-School, Grades 1–8 (Gm), Girls’ School (1–9)</p>
-              </div>
-            </div>
-            <div className="space-y-3">
-              <div className="flex justify-between py-2 border-b border-school-green-dark/20">
-                <span className="text-school-green-dark/80">Timing</span>
-                <span className="font-semibold">Pre-School 11:15–14:15; 1–8(Gm) 12:30–17:20; Girls’ 1–9 12:00–17:20</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-school-green-dark/20">
-                <span className="text-school-green-dark/80">Classes</span>
-                <span className="font-semibold">Pre-School, Grades 1–8 (Gm), Girls’ School (1–9)</span>
-              </div>
-              <div className="flex justify-between py-2">
-                <span className="text-school-green-dark/80">Activities</span>
-                <span className="font-semibold">Assembly, dua and value talk at start</span>
-              </div>
-            </div>
+          <div className="bg-card rounded-2xl p-6 border border-border">
+            <h3 className="font-heading text-2xl font-bold text-foreground mb-4">Noon Shift</h3>
+            <table className="w-full border border-border rounded-lg overflow-hidden">
+              <thead className="bg-muted">
+                <tr>
+                  <th className="text-left p-3 text-sm text-muted-foreground">Section</th>
+                  <th className="text-left p-3 text-sm text-muted-foreground">Timings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t border-border">
+                  <td className="p-3">Pre-School</td>
+                  <td className="p-3">11:15 – 14:15</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="p-3">Grades 1–8 (Gm)</td>
+                  <td className="p-3">12:30 – 17:20</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="p-3">Girls’ School (1–9)</td>
+                  <td className="p-3">12:00 – 17:20</td>
+                </tr>
+              </tbody>
+            </table>
+            <p className="mt-3 text-sm text-muted-foreground">Assembly, dua, and value talk at the start of each shift.</p>
           </div>
         </div>
       </div>

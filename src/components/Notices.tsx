@@ -1,4 +1,4 @@
-import { Bell, Calendar, ArrowRight } from "lucide-react";
+import { Bell, ArrowRight } from "lucide-react";
 
 const Notices = () => {
   const notices = [
@@ -75,53 +75,7 @@ const Notices = () => {
             </div>
           </div>
 
-          {/* Upcoming Events */}
-          <div>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                <Calendar className="h-5 w-5 text-primary" />
-              </div>
-              <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
-                Upcoming Events
-              </h2>
-            </div>
-
-            <div className="bg-card rounded-2xl border border-border overflow-hidden">
-              {events.map((event, index) => (
-                <div
-                  key={index}
-                  className={`p-5 flex items-center gap-5 hover:bg-muted/50 transition-colors ${
-                    index !== events.length - 1 ? "border-b border-border" : ""
-                  }`}
-                >
-                  <div className="w-16 h-16 bg-primary rounded-xl flex flex-col items-center justify-center text-primary-foreground shrink-0">
-                    <span className="text-lg font-bold leading-none">{event.date.split(" ")[0]}</span>
-                    <span className="text-xs mt-1">{event.date.split(" ")[1]}</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">{event.title}</h3>
-                    <p className="text-sm text-muted-foreground">{event.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Quick Links */}
-            <div className="mt-8 p-6 bg-gradient-hero rounded-2xl text-primary-foreground">
-              <h3 className="font-heading text-xl font-bold mb-4">Quick Links</h3>
-              <div className="grid grid-cols-2 gap-3">
-                {["Download Syllabus", "Fee Payment", "Photo Gallery", "Contact Us"].map((link) => (
-                  <a
-                    key={link}
-                    href="#"
-                    className="px-4 py-2.5 bg-primary-foreground/10 rounded-lg text-sm font-medium hover:bg-primary-foreground/20 transition-colors text-center"
-                  >
-                    {link}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
+          {/* Upcoming Events removed */}
         </div>
       </div>
     </section>

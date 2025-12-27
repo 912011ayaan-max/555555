@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Twitter, Youtube, ChevronUp } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+const logoSrc = new URL("../../CS_Logo[1].png", import.meta.url).href;
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img src={logo} alt="Crescent School" className="h-14 w-auto bg-primary-foreground/10 rounded-lg p-1" />
+              <img src={logoSrc} alt="Crescent School" className="h-14 w-auto bg-primary-foreground/10 rounded-lg p-1" />
               <div>
                 <h3 className="font-heading text-xl font-bold">Crescent School</h3>
                 <p className="text-xs text-primary-foreground/70">Excellence • Character • Faith</p>

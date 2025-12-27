@@ -1,31 +1,6 @@
-import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    parentName: "",
-    studentName: "",
-    email: "",
-    phone: "",
-    grade: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Enquiry Submitted!",
-      description: "Thank you for your interest. We will contact you soon.",
-    });
-    setFormData({ parentName: "", studentName: "", email: "", phone: "", grade: "", message: "" });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
   const contactInfo = [
     {
       icon: MapPin,
@@ -65,131 +40,11 @@ const Contact = () => {
             Contact Us
           </h2>
           <p className="text-muted-foreground text-lg">
-            Have questions about admissions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Have questions about admissions? Visit or call during office hours. We’re happy to help.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <div className="bg-card rounded-2xl border border-border p-6 md:p-8">
-            <h3 className="font-heading text-2xl font-bold text-foreground mb-6">Admission Enquiry</h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Parent's Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="parentName"
-                    value={formData.parentName}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-school-gold/50 focus:border-school-gold transition-colors"
-                    placeholder="Enter parent's name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Student's Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="studentName"
-                    value={formData.studentName}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-school-gold/50 focus:border-school-gold transition-colors"
-                    placeholder="Enter student's name"
-                  />
-                </div>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-school-gold/50 focus:border-school-gold transition-colors"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Phone Number *
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-school-gold/50 focus:border-school-gold transition-colors"
-                    placeholder="Enter phone number"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Grade Applying For *
-                </label>
-                <select
-                  name="grade"
-                  value={formData.grade}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-school-gold/50 focus:border-school-gold transition-colors"
-                >
-                  <option value="">Select Grade</option>
-                  <option value="nursery">Nursery</option>
-                  <option value="jr-kg">Jr. KG</option>
-                  <option value="sr-kg">Sr. KG</option>
-                  <option value="class-1">Class 1</option>
-                  <option value="class-2">Class 2</option>
-                  <option value="class-3">Class 3</option>
-                  <option value="class-4">Class 4</option>
-                  <option value="class-5">Class 5</option>
-                  <option value="class-6">Class 6</option>
-                  <option value="class-7">Class 7</option>
-                  <option value="class-8">Class 8</option>
-                  <option value="class-9">Class 9</option>
-                  <option value="class-10">Class 10</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Message (Optional)
-                </label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-school-gold/50 focus:border-school-gold transition-colors resize-none"
-                  placeholder="Any specific questions or requirements?"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-school-green-light transition-colors flex items-center justify-center gap-2"
-              >
-                <Send className="h-5 w-5" />
-                Submit Enquiry
-              </button>
-            </form>
-          </div>
-
-          {/* Contact Information */}
+        <div className="grid lg:grid-cols-1 gap-12">
           <div className="space-y-8">
             {/* Info Cards */}
             <div className="grid sm:grid-cols-2 gap-4">
