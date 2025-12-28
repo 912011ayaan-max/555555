@@ -5,12 +5,12 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
-    { url: "/images/DSCN6035.JPG", title: "Campus View" },
-    { url: "/images/DSCN6042.JPG", title: "Classroom Activity" },
-    { url: "/images/DSCN6039.JPG", title: "Science Lab" },
-    { url: "/images/DSCN6015.JPG", title: "Library" },
-    { url: "/images/DJI_20251015175722_0001_D.JPG", title: "Aerial Shot 1" },
-    { url: "/images/DJI_20251015180411_0004_D.JPG", title: "Aerial Shot 2" },
+    { url: new URL("../../images/DSCN6035.JPG", import.meta.url).href, title: "Campus View" },
+    { url: new URL("../../images/DSCN6042.JPG", import.meta.url).href, title: "Classroom Activity" },
+    { url: new URL("../../images/DSCN6039.JPG", import.meta.url).href, title: "Science Lab" },
+    { url: new URL("../../images/DSCN6015.JPG", import.meta.url).href, title: "Library" },
+    { url: new URL("../../images/DJI_20251015175722_0001_D.JPG", import.meta.url).href, title: "Aerial Shot 1" },
+    { url: new URL("../../images/DJI_20251015180411_0004_D.JPG", import.meta.url).href, title: "Aerial Shot 2" },
   ];
 
   const openLightbox = (index: number) => setSelectedImage(index);
