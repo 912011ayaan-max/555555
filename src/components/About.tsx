@@ -46,7 +46,7 @@ const About = () => {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
               <img
-                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=600&fit=crop"
+                src={new URL("../../images/DSCN6042.JPG", import.meta.url).href}
                 alt="Students in classroom"
                 className="w-full h-full object-cover"
               />

@@ -5,30 +5,12 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
-    {
-      url: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop",
-      title: "Classroom Sessions",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop",
-      title: "Library",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=400&fit=crop",
-      title: "Science Lab",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&h=400&fit=crop",
-      title: "Computer Lab",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop",
-      title: "Sports Activities",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop",
-      title: "Annual Day",
-    },
+    { url: "/images/DSCN6035.JPG", title: "Campus View" },
+    { url: "/images/DSCN6042.JPG", title: "Classroom Activity" },
+    { url: "/images/DSCN6039.JPG", title: "Science Lab" },
+    { url: "/images/DSCN6015.JPG", title: "Library" },
+    { url: "/images/DJI_20251015175722_0001_D.JPG", title: "Aerial Shot 1" },
+    { url: "/images/DJI_20251015180411_0004_D.JPG", title: "Aerial Shot 2" },
   ];
 
   const openLightbox = (index: number) => setSelectedImage(index);
@@ -115,7 +97,7 @@ const Gallery = () => {
 
           <div className="max-w-4xl max-h-[80vh]">
             <img
-              src={images[selectedImage].url.replace("600", "1200").replace("400", "800")}
+              src={images[selectedImage].url}
               alt={images[selectedImage].title}
               className="max-w-full max-h-[80vh] object-contain rounded-lg"
             />
